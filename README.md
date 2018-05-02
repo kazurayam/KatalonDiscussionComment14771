@@ -47,7 +47,7 @@ We want to select one of the li elements, identifying a li by the value of data-
 
 We want to create a single Test Object which is parameterized so that it accepts the value of index 1,2,3,4. We do not like to create 4 test objects per each li element.
 
-### Wait for elements visible
+### We need to wait for elements become visible
 
 https://forum.katalon.com/discussion/comment/14771#Comment_14771 implied that
 the Application-Under-Test is Ajax-driven (possibly implemented upon jQuery). Ajax-driven means that the HTML
