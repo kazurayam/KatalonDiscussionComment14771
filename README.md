@@ -56,7 +56,7 @@ until the target HTML elements become visible.
 
 ### Test Object definition
 
-I made a Test Object with Basic Selector with xpath:
+I made 'Page_14771/li_ManufacturerList_parameterized': a Test Object with Basic Selector with xpath:
 
 `//ul[@id='ManufacturerList_listbox']/li[@data-offset-index='${index}']`
 
@@ -65,6 +65,8 @@ I made a Test Object with Basic Selector with xpath:
 I made a Test Case to demonstrate how to use the parameterized Test Object.
 
 ```
+import ...
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://demoaut-mimic.kazurayam.com/comment14771_testbed.html')
@@ -93,9 +95,8 @@ def content2 = WebUI.getText(findTestObject(
 	['index':'2']))
 WebUI.verifyEqual(content2, 'BMW')
 
-// If we want to know how long the ManufacturerList is,
-// The value of data-offset-index attribute of
-// the last <li> element signifies the list size.
+// If we want to know the size of the ManufacturerList,
+// look at the data-offset-index attribute of the last <li> element.
 def lastIndex = WebUI.getAttribute(
 	findTestObject('Page_14771/li_ManufacturerList_last'),
 	'data-offset-index')
