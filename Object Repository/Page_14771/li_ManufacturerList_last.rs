@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_ManufacturerList_last</name>
+   <tag></tag>
+   <elementGuidId>8ef00ba0-2bd7-4d0f-900f-e5711cffef05</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//ul[@id='ManufacturerList_listbox']/li[position()=last()]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//ul[@id='ManufacturerList_listbox']/li[position()=last()]</value>
+   </webElementProperties>
+</WebElementEntity>
